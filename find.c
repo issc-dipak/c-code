@@ -15,18 +15,18 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Initialize max to the first element
-    int max = arr[0];
+    // Initialize min to the first element
+    int min = arr[0];
 
-    // Iterate through the array to find the maximum
+    // Iterate through the array to find the minimum
     for (int i = 1; i < n; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+        if (arr[i] < min) {
+            min = arr[i];
         }
     }
 
-    // Output the maximum element
-    printf("The maximum element is: %d\n", max);
+    // Output the minimum element
+    printf("The minimum element is: %d\n", min);
 
     return 0;
 }
